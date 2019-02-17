@@ -1,0 +1,188 @@
+.header {
+    width: 100%;
+    height: 144px;
+    margin: auto;
+    background: #fff;
+    position: relative;
+}
+
+.header .thead {
+    height: 33px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 12px;
+}
+
+.header .head {
+    width: 1210px;
+    height: 33px;
+    background: #FAFAFA;
+    border-bottom: 1px solid #f0f0f0;
+    margin: auto;
+
+}
+
+.header .head .login {
+    width: 280px;
+
+}
+
+.header .head .login a {
+    color: #777777;
+}
+
+.header .head .login li {
+    line-height: 33px;
+    float: left;
+}
+
+.header .head .login li:nth-of-type(1) {
+    /* font-size: 14px; */
+    color: #777777;
+}
+
+.header .head .serve {
+    width: 291px;
+    float: right;
+    font-size: 12px;
+    z-index: -999;
+}
+
+.header .head .serve a {
+    color: #777777;
+}
+
+.header .head .serve div {
+    width: 97px;
+    text-align: center;
+    line-height: 33px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.header .head .serve div>span {
+    display: block;
+    width: 7px;
+    height: 3px;
+    background: url(../images/t1.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    /* background-position: 90px 17px; */
+}
+
+.header .head .serve div:hover {
+    border: 1px solid #f0f0f0;
+    border-top: none;
+    background: #fff;
+    z-index: 1;
+}
+
+.header .head .serve div:hover span {
+    transform: rotate(180deg)
+}
+
+.header .head .serve li {
+    display: none;
+    /* font-size: 14px; */
+    height: 27px;
+    line-height: 27px;
+}
+
+.header .head .serve div:hover li {
+    display: block;
+
+}
+
+.header .head .serve li:hover {
+    background: #F7F7F7
+}
+
+
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer .attention {
+    width: 1210px;
+    height: 200px;
+    margin: auto;
+    /* position: relative; */
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+
+}
+
+.footer .attention_1 {
+    width: 220px;
+    height: 170px;
+    float: left;
+    margin-top: 30px;
+
+}
+
+.footer .attention_1 i a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 15px;
+
+}
+
+.footer .attention .attention_2 {
+    width: 290px;
+    height: 180px;
+    float: right;
+    margin-top: 20px;
+    /* background: rgb(209, 121, 26); */
+
+}
+
+.footer .attention .attention_2 dl {
+    float: left;
+    margin: 15px 20px 0 20px;
+    font-size: 12px;
+}
+
+.footer .attention .attention_2 dl dt {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer .attention .attention_2 dl dd {
+    padding-top: 10px;
+}
+
+.footer .copyright div:nth-of-type(1) {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .copyright {
+    width: 1210px;
+    height: 230px;
+    margin: auto;
+}
+
+.footer .copyright div:nth-of-type(1) a {
+    font-size: 13px;
+    padding-right: 11px;
+    border-right: 1px solid #ededed
+}
+
+.footer .copyright div:nth-of-type(2) {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer .copyright div:nth-of-type(2) li {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 15px;
+}

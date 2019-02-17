@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common2.css">
+    <link rel="stylesheet" href="../css/shopping.css">
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/jquery-1.10.1.min.js"></script>
+    <script src="../js/shopping.js"></script>
+
+</head> 
+
+<body>
+    <section id="baiyang">
+        <section class="header">
+            <div class="thead">
+                <div class="head">
+                    <ul class="login">
+                        <li>您好，<span class="number"></span> 欢迎到来</li>
+                        <li><a href="../index.html">&nbsp;百洋健康</a> </li>
+                        <li><a href="##" class="tuichu">&nbsp;[退出]</a> </li>
+
+                    </ul>
+                    <ul class="serve">
+                        <div>
+                            <a href="##">我的订单</a>
+                            <span></span> 
+                            <ul class="s1">
+                                <li><a href="##">待付款订单</a></li>
+                                <li><a href="##">待收货订单</a></li>
+                                <li><a href="##">待评价交易</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="##">我的收藏</a>
+                            <span></span>
+                            <ul class="s2">
+                                <li><a href="##">商品收藏</a></li>
+                                <li><a href="##">店铺收藏</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="">我的服务</a>
+                            <span></span>
+                            <ul class="s3">
+                                <li><a href="##">帮助中心</a></li>
+                                <li><a href="##">售后服务</a></li>
+                                <li><a href="##">客服中心</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="title">
+                <h1><a href="../index.html">百洋健康</a> </h1>
+                <div class="title_1">
+                    <ul>
+                        <li>
+                            <i></i>
+                            <span></span>
+                            <p>我的购物车</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span></span>
+                            <p>确认结算</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span></span>
+                            <p>支付提交</p>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span></span>
+                            <p>订单完成</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="main">
+            <div class="main_1">
+                <h3>我的购物车</h3>
+                <li>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</li>
+            </div>
+            <div class="main_2">
+                <div class="mainhead">
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <span>全选</span>
+                        </li>
+                        <li>商品</li>
+                        <li>单价(元)</li>
+                        <li>数量</li>
+                        <li>小计(元)</li>
+                        <li>操作</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <!-- <dl data-da="${item.id}">
+                                <dt class="content_1">
+                                    <span>店铺：</span>
+                                    <span><a href="##">百洋健康官方自营店 </a></span>
+                                    <span>
+                                        <i>免运费</i>
+                                        <p>满88免运费</p>
+                                    </span>
+                                </dt>
+                                <dd class="content_2">
+                                    <ul>
+                                        <li class="check">
+                                             <input type="checkbox">
+                                        </li>
+                                        <li>
+                                            <img src="${item.img2}" alt="">
+                                        </li>
+                                        <li>
+                                            <a href="">${item.name}</a>
+                                            <p>
+                                                <span><img src="../images/list_62.gif" alt=""></span>
+                                                <span><img src="../images/list_63.gif" alt=""></span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="unitPrice">${item.Presentprice}</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <a href="##" class="jian">-</a>
+                                                <i class="num">${str.num}</i>
+                                                <a href="##" class="jia">+</a>
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <p class="total">${item.Presentprice*str.num}.00</p>
+                                        </li>
+                                        <li>
+                                            <a href="">移入收藏夹</a>
+                                            <a href="">删除</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl> -->
+                </div>
+                <div class="main_3">
+                    <ul>
+                        <li>
+                            <span>商品总价：</span>
+                            <span class="ttl_1">00.00</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span>商品总价（不含运费、税费）</span>
+                            <span class="ttl_2">00  .00</span>
+                            <span>元</span>
+                            <span class="jiesuan">确认结算</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_4">
+                    <div class="thd">猜您喜欢的宝贝</div>
+                    <div class="tft">
+                        <div>
+                            <li class="tfta"><a href=""><img src="../images/2_06004308718626936.jpg" alt=""></a></li>
+
+                            <li class="tftb">
+                                <a href="">
+                                    <dl>
+                                        <dt>Bloem维他唏 复合维C胶原蛋白吸管莓子味14支/盒</dt>
+                                        <dd>￥64.8</dd>
+                                    </dl>
+
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="tfta"><a href=""><img src="../images/2_06004308718626936.jpg" alt=""></a></li>
+
+                            <li class="tftb">
+                                <a href="">
+                                    <dl>
+                                        <dt>Bloem维他唏 复合维C胶原蛋白吸管莓子味14支/盒</dt>
+                                        <dd>￥64.8</dd>
+                                    </dl>
+
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="tfta"><a href=""><img src="../images/2_06004308718626936.jpg" alt=""></a></li>
+
+                            <li class="tftb">
+                                <a href="">
+                                    <dl>
+                                        <dt>Bloem维他唏 复合维C胶原蛋白吸管莓子味14支/盒</dt>
+                                        <dd>￥64.8</dd>
+                                    </dl>
+
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="footer">
+            <div class="attention">
+                <div class="attention_1">
+                    <i><img src="../images/logo.png" alt=""></i>
+                    <i><a href="">关于我们</a></i>
+                    <i><a href=""><img src="../images/weibo02.png" alt=""></a></i>
+                    <i><a href=""><img src="../images/weixin01.png" alt=""></a></i>
+                </div>
+                <div class="attention_2">
+                    <li>
+                        <dl>
+                            <dt><img src="../images/weixin-qr.jpg" alt=""></dt>
+                            <dd>扫描进入微信商城</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/app-qr.jpg" alt=""></dt>
+                            <dd>扫描下载百洋APP</dd>
+                        </dl>
+                    </li>
+                    <li></li>
+                </div>
+            </div>
+            <div class="copyright">
+                <div>
+                    <a href="">友情链接申请</a>
+                </div>
+                <div>
+                    <li>
+                        <a href="">首页</a>
+                        <a href="">联系我们</a>
+                    </li>
+                    <li>
+                        <span>版权所有 2007-2018 青岛百洋健康药房连锁有限公司 百洋健康 鲁ICP备09091598号</span>
+                        <a href=""> 互联网药品信息服务资质证书编号 (鲁)-非经营性-2017-0003</a>
+                    </li>
+                    <li>
+                        <span><a href=""><img src="../images/jubao.jpg" alt=""></a></span>
+                        <span><a href=""><img src="../images/chengxin.jpg" alt=""></a></span>
+                        <span><a href=""><img src="../images/hangye.jpg" alt=""></a></span>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+</body>
+
+</html>
+</body>
+
+</html>
